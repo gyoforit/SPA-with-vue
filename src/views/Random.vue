@@ -6,13 +6,6 @@
     <h2 v-if="selectMovie">
       오늘의 영화는!
     </h2>
-    <!-- <div v-if="selectMovie" class="card m-0" style="width: 30rem;">
-      <img :src="'http://image.tmdb.org/t/p/w500/' + selectMovie[0].poster_path " class="card-img-top" alt="">
-      <div class="card-body">
-        <h3 class="card-title">{{ selectMovie[0].title }}</h3>
-        <p class="card-text">{{ selectMovie[0].overview }}</p>
-      </div>
-    </div> -->
     <div class="d-flex justify-content-center mb-5">
       <div v-if="selectMovie" class="card text-center mt-3 w-25">
         <div class="card-header">

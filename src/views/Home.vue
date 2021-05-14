@@ -25,9 +25,6 @@ export default {
       'movies'
     ])
   }
-
-
-  
 }
 </script>
 

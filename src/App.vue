@@ -12,16 +12,10 @@
 </template>
 
 <script>
-// import Random from '@/views/Random'
-// import MyMovieList from '@/views/MyMovieList'
 import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
-  // components: {
-  //   Random,
-  //   MyMovieList,
-  // },
   methods: {
   ...mapActions([
       'getMovies',
