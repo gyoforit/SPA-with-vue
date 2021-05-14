@@ -2,7 +2,7 @@
 
 ## 0. 개발 환경
 
-- `package.json`파일 참고 ([바로 가기 링크](package.json))
+- `package.json`파일 참고 ([바로가기 링크](package.json))
 
 
 
@@ -23,7 +23,7 @@
 
 > AJAX 통신으로 JSON 데이터 요청 및 저장하기
 >
-> [App.vue 파일 바로가기](src/App.vue)
+> [App.vue 바로가기](src/App.vue)
 
 - 이번 프로젝트에서 가장 많은 시간을 소비한 부분이었다. 우리가 해결해야할 문제는 'AJAX를 통해 받아온 데이터를 어느 시점에 불러와야 하는가?' 였다. Home 페이지는 물론 Random 페이지에서도 영화 데이터가 필요했기 때문이다.
 - 처음에는 히든 페이지나 버튼을 활용해서 버튼을 한 번 눌렀을 때, store에 영화 데이터가 저장되는 방법을 고려했다. 그런데 지난 자바스크립트 프로젝트 때 처럼 '버튼이 눌릴 때마다 store에 데이터가 추가돼서 엄청난 중복이 생기지 않을까' 하는 걱정이 되었다.
@@ -36,13 +36,14 @@
 
 > 응답받은 영화 데이터를 카드 형식으로 출력한다.
 >
-> Home.vue 파일 바로가기
+> [Home.vue 바로가기](views/Home.vue)
 >
-> MovieCard.vue 파일 바로가기
+> [MovieCard.vue 바로가기](src/components/MovieCard.vue)
 
 1. `Home.vue`
+   
    - 하위 컴포넌트가 영화 각각의 정보가 담긴 `MovieCard`고, Card Group 형식으로 출력하기를 원했기 때문에 `MovieCard`를 `div`로 감싼 후 `card-group` 클래스를 부여했다.
-
+   
 2. `MovieCard.vue`
 
    - 가로길이 `sm` 기준으로 한줄에 한 편씩 / 세 편씩으로 보여지는 반응형으로 구현했다.
@@ -59,7 +60,7 @@
 
 > 버튼을 누르면 랜덤으로 영화 한 편의 정보를 출력한다.
 >
-> Random.vue 파일 바로 가기
+> [Random.vue 바로가기](src/views/Random.vue)
 
 - `lodash`의 `sampleSize`를 활용하여 영화 전체 데이터에서 랜덤으로 한 편 뽑는 `getRandomMovie` 메서드를 구현했다.
 
@@ -80,6 +81,14 @@
 > 보고 싶은 영화를 작성 후 리스트에 저장
 >
 > 감상한 영화 표시 및 삭제 기능, 중복된 영화 필터링 기능 구현
+>
+> [MyMovieList.vue 바로가기](src/views/MyMovieList.vue)
+>
+> [MyListForm.vue 바로가기](src/components/MyListForm.vue)
+>
+> [MyList.vue 바로가기](src/components/MyList.vue)
+>
+> [index.js 바로가기](src/store/index.js)
 
 1. `MyMovieList.vue`: 가장 상위 컴포넌트로 2, 3번 컴포넌트를 담고 있다.
 
